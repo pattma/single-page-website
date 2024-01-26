@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@
 body {
     max-width: 1105px;
     margin: 0 auto;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* header */
@@ -39,4 +43,44 @@ ul > li {
 li > a {
     text-decoration: none;
     color: black;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    background-color: rgb(216,216,216);
+    padding: 32px 24px;
+    gap: 24px;
+}
+
+.banner > .left-side {
+    width: 60%;
+}
+
+.banner > .left-side > img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner > .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 0 24px;
+    gap: 16px;
+    color: rgb(75, 74, 75);
+}
+
+.banner > .right-side > h1 {
+    font-size: 2.3rem;
+}
+
+.banner > .right-side > button {
+    background-color: rgb(75, 74, 75);
+    color: white;
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
 }
